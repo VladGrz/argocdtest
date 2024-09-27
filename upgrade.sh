@@ -15,7 +15,7 @@ echo $tmp_dir
 
 git clone git@github.com:VladGrz/argocdtest.git $tmp_dir
 
-sed -i -e "s/vladgrz\/my-flask-app:.*/vladgrz\/my-flask-app:$new_version/g" $tmp_dir/my-app/deployment.yaml
+sed -i -e "s/vladgrz\/my-flask-app:.*/vladgrz\/my-flask-app:$new_version/g" $tmp_dir/environments/staging/my-app/deployment.yaml
 
 cd $tmp_dir
 git add .
