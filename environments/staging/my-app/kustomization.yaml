@@ -1,0 +1,9 @@
+namespace: nginx
+replicas:
+  - name: nginx-deployment
+    count: 2
+iages:
+  - name: vladgrz/nginx
+    newTag: v0.1.0
+resources:
+  - ../../../my_flask_app
